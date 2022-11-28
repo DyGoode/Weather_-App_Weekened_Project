@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+<title>Wonder Weather</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Wonder Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Worldwide</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Local Weather</a></li>
+                            <li><a class="dropdown-item" href="#">Local Festivities</a></li>
+                            <li><a class="dropdown-item" href="#">Weather Tips</a></li>
+                            <li><a class="dropdown-item" href="#">Emergency Preparedness</a></li>
+                            <li><a class="dropdown-item" href="#">Worldwide Weather Phenomenon</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Your Wonder Weather profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Subscribe!</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search Wonder Weather" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <br>
+    <div class="container searchContainer text-center">
+        <form name="testData" id="testDataForm">
+            <label for="city-name">Search Weather by City</label>
+            <br>
+            <input type="text" name="city-name" id="city-name" placeholder="City">
+            <br>
+            <br>
+            <button type='submit' class="btn btn-secondary" id="submitButton" onclick="loadCityData()">Submit</button>
+        </form>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="list-group weather-list mt-3">
+        <!-- Weather info here -->
+        <!-- Lettuce Pray -->
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">    
+        <div>
+            <button class="btn btn-danger mx-3" onclick="clearData()">Clear Search</button>
+        </div>
+    </div>
+    <br>
+    
+    
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2"><strong>Subscribe to Wonder Weather!</strong></p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" class="form-control" placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-light mb-4">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="text-center">
+          © 2022 Wonder Weather
+        </div>
+    </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

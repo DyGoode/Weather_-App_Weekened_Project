@@ -33,10 +33,10 @@ const createList = (id, name, temp_max, temp_min, description, humidity) => {
       ${name}
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"> High: ${temp_max}</li>
-      <li class="list-group-item"> Low: ${temp_min}</li>
+      <li class="list-group-item"> High: ${temp_max}°F</li>
+      <li class="list-group-item"> Low: ${temp_min}°F</li>
       <li class="list-group-item"> Forecast: ${description}</li>
-      <li class="list-group-item"> Humidity: ${humidity}</li>
+      <li class="list-group-item"> Humidity: ${humidity} %</li>
     </ul>
     </div>
     <br>`
